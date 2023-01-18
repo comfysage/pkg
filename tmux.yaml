@@ -1,0 +1,15 @@
+pkg:  tmux
+url:  github.com/tmux/tmux
+desc: tmux is a terminal multiplexer.
+
+collection: core
+
+install:
+  - sh autogen.sh
+  - ./configure
+  - make
+  - sudo make install
+
+update:
+  - make
+  - sudo make install
