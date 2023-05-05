@@ -1,0 +1,8 @@
+pkg:  neofetch
+url:  https://github.com/dylanaraps/neofetch
+desc: A command-line system information tool written in bash 3.2+
+
+collection: core
+
+install:
+  - make PREFIX=~/.hayashi/pack install
