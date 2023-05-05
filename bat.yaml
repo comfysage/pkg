@@ -1,0 +1,12 @@
+pkg:  bat
+url:  https://github.com/sharkdp/bat
+desc: A cat(1) clone with wings.
+
+collection: core
+
+install:
+  - cargo install --locked bat
+
+pack:
+  - path: target/release/bat
+    type: bin
