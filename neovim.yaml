@@ -1,0 +1,18 @@
+pkg:  neovim
+url:  https://github.com/neovim/neovim
+desc: Vim-fork focused on extensibility and usability.
+
+collection: core
+
+install:
+  - make CMAKE_BUILD_TYPE=RelWithDebInfo
+  - sudo mkdir /usr/local/share/nvim
+  - sudo cp runtime /usr/local/share/nvim/ -r
+
+update:
+  - make CMAKE_BUILD_TYPE=RelWithDebInfo
+  - sudo rm /usr/local/share/nvim/runtime -r
+  - sudo cp runtime /usr/local/share/nvim/ -r
+
+remove:
+  - sudo rm /usr/local/share/nvim -r
