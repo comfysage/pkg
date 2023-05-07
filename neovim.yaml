@@ -4,6 +4,10 @@ desc: Vim-fork focused on extensibility and usability.
 
 collection: core
 
+pack:
+  - path: build/bin/nvim
+    type: bin
+
 install:
   - make CMAKE_BUILD_TYPE=RelWithDebInfo
   - sudo mkdir /usr/local/share/nvim
