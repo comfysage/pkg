@@ -1,0 +1,16 @@
+pkg:  hayashi
+url:  https://github.com/crispybaccoon/hayashi
+desc: a tiny distro-independent package manager written in Go.
+
+collection: core
+
+pack:
+  - path: hayashi
+    type: bin
+
+install:
+  - make
+
+update:
+  - make clean; make
+
