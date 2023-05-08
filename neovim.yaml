@@ -10,7 +10,7 @@ pack:
 
 install:
   - make CMAKE_BUILD_TYPE=RelWithDebInfo
-  - sudo mkdir /usr/local/share/nvim
+  - sudo mkdir /usr/local/share/nvim -p
   - sudo cp runtime /usr/local/share/nvim/ -r
 
 update:
