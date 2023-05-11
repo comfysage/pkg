@@ -2,6 +2,8 @@ pkg:  cbonsai
 url:  https://gitlab.com/jallbrit/cbonsai
 desc: a bonsai tree generator written in C.
 
+collection: core
+
 pack:
   - path: cbonsai
     type: bin
