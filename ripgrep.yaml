@@ -1,0 +1,12 @@
+pkg:  ripgrep
+url:  https://github.com/BurntSushi/ripgrep
+desc: Recursively search directories for a regex pattern.
+
+collection: core
+
+pack:
+  - path: target/release/rg
+    type: bin
+
+install:
+  - cargo build --release
