@@ -1,0 +1,10 @@
+pkg:  cbonsai
+url:  https://gitlab.com/jallbrit/cbonsai
+desc: a bonsai tree generator written in C.
+
+pack:
+  - path: cbonsai
+    type: bin
+
+install:
+  - make cbonsai
