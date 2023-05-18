@@ -5,7 +5,7 @@ desc: a command line config manager built in rust.
 collection: core
 
 install:
-  - cargo install --locked niru
+  - cargo build -r
 
 pack:
   - path: target/release/niru

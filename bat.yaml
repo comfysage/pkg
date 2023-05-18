@@ -5,7 +5,7 @@ desc: A cat(1) clone with wings.
 collection: core
 
 install:
-  - cargo install --locked bat
+  - cargo build -r --locked bat
 
 pack:
   - path: target/release/bat
