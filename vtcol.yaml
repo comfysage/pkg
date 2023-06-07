@@ -1,0 +1,11 @@
+pkg:  vtcol
+url:  gitlab.com/phgsng/vtcol.git
+desc: Change the color scheme of the virtual Linux console.
+
+pack:
+  - path: ./target/release/vtcol
+    type: bin
+
+install:
+  - make
+
