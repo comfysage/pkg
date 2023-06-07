@@ -4,5 +4,9 @@ desc: fzf is a general-purpose command-line fuzzy finder.
 
 collection: core
 
+pack:
+  - path: fzf
+    type: bin
+
 install:
-  - ./install
+  - go build -ldflags "-s -w -X main.version=$version -X main.revision=go-get"
