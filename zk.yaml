@@ -1,0 +1,10 @@
+pkg: zk
+url: github.com/mickael-menu/zk
+
+pack:
+  - path: zk
+    type: bin
+
+install:
+  - make
+
