@@ -8,8 +8,8 @@ install:
   - sh autogen.sh
   - ./configure
   - make
-  - sudo make install
+  - make prefix=$HOME/.hayashi/pack install
 
 update:
   - make
-  - sudo make install
+  - make prefix=$HOME/.hayashi/pack install
