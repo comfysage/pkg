@@ -2,7 +2,5 @@ pkg:  rust
 url:  https://github.com/rust-lang/rustup
 desc: The Rust toolchain installer
 
-collection: core
-
 install:
   - curl https://sh.rustup.rs -sSf | sh -s -- -y

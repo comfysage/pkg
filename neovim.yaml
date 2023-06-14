@@ -2,8 +2,6 @@ pkg:  neovim
 url:  https://github.com/neovim/neovim
 desc: Vim-fork focused on extensibility and usability.
 
-collection: core
-
 pack:
   - path: build/bin/nvim
     type: bin

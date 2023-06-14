@@ -2,8 +2,6 @@ pkg:  fzf
 url:  https://github.com/junegunn/fzf
 desc: fzf is a general-purpose command-line fuzzy finder.
 
-collection: core
-
 pack:
   - path: fzf
     type: bin

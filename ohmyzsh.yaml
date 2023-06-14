@@ -2,7 +2,5 @@ pkg:  ohmyzsh
 url:  https://github.com/ohmyzsh/ohmyzsh
 desc: A delightful framework for managing your zsh configuration.
 
-collection: core
-
 install:
     - sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc --unattended

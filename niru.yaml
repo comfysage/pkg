@@ -2,8 +2,6 @@ pkg:  niru
 url:  https://github.com/crispybaccoon/niru
 desc: a command line config manager built in rust.
 
-collection: core
-
 install:
   - cargo build -r
 
