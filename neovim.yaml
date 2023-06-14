@@ -2,19 +2,14 @@ pkg:  neovim
 url:  https://github.com/neovim/neovim
 desc: Vim-fork focused on extensibility and usability.
 
-pack:
-  - path: build/bin/nvim
-    type: bin
-
 install:
-  - make CMAKE_BUILD_TYPE=RelWithDebInfo
-  - sudo mkdir /usr/local/share/nvim -p
-  - sudo cp runtime /usr/local/share/nvim/ -r
+  - make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/.hayashi/pack"
+  - make install
 
 update:
-  - make CMAKE_BUILD_TYPE=RelWithDebInfo
-  - sudo rm /usr/local/share/nvim/runtime -r
-  - sudo cp runtime /usr/local/share/nvim/ -r
+  - rm build -r
+  - make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/.hayashi/pack"
+  - make install
 
 remove:
-  - sudo rm /usr/local/share/nvim -r
+  - cmake --build build/ --target uninstall
