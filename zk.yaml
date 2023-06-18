@@ -1,5 +1,5 @@
 pkg: zk
-url: github.com/mickael-menu/zk
+url: mickael-menu/zk
 
 pack:
   - path: zk
