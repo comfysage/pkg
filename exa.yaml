@@ -1,0 +1,10 @@
+pkg:  exa
+url:  https://github.com/ogham/exa
+desc: A modern replacement for ls.
+
+pack:
+  - path: ./target/release/exa
+    type: bin
+
+install:
+  - cargo build --release
