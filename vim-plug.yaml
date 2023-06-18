@@ -1,5 +1,5 @@
 pkg:  vim-plug
-url:  https://github.com/junegunn/vim-plug
+url:  junegunn/vim-plug
 desc: A minimalist Vim plugin manager.
 
 install:
