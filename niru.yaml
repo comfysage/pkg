@@ -1,5 +1,5 @@
 pkg:  niru
-url:  https://github.com/crispybaccoon/niru
+url:  crispybaccoon/niru
 desc: a command line config manager built in rust.
 
 install:
