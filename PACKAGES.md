@@ -7,16 +7,15 @@ This page features a list of core packages. **This page is auto-generated.**
 A cat(1) clone with wings.
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mbat[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/sharkdp/bat[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33mA cat(1) clone with wings.[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33mcargo build -r --locked bat[0m[97m
-[0m[91mpack[0m[97m:[0m[97m
-[0m[97m- [0m[91mpath[0m[97m:[0m[97m [0m[33mtarget/release/bat[0m[97m
-[0m[91mtype[0m[97m:[0m[97m [0m[33mbin[0m[97m
-[0m
+pkg: bat
+url: https://github.com/sharkdp/bat
+desc: A cat(1) clone with wings.
+collection: pkg
+install:
+  - cargo build -r --locked bat
+pack:
+  - path: target/release/bat
+    type: bin
 ```
 
 ## [cbonsai.yaml](https://gitlab.com/jallbrit/cbonsai)
@@ -24,16 +23,15 @@ A cat(1) clone with wings.
 a bonsai tree generator written in C.
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mcbonsai[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://gitlab.com/jallbrit/cbonsai[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33ma bonsai tree generator written in C.[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33mmake cbonsai[0m[97m
-[0m[91mpack[0m[97m:[0m[97m
-[0m[97m- [0m[91mpath[0m[97m:[0m[97m [0m[33mcbonsai[0m[97m
-[0m[91mtype[0m[97m:[0m[97m [0m[33mbin[0m[97m
-[0m
+pkg: cbonsai
+url: https://gitlab.com/jallbrit/cbonsai
+desc: a bonsai tree generator written in C.
+collection: pkg
+install:
+  - make cbonsai
+pack:
+  - path: cbonsai
+    type: bin
 ```
 
 ## [deno.yaml](github.com/denoland/deno)
@@ -41,16 +39,15 @@ a bonsai tree generator written in C.
 A modern runtime for JavaScript and TypeScript.
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mdeno[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/denoland/deno[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33mA modern runtime for JavaScript and TypeScript.[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33mcargo build -r --locked[0m[97m
-[0m[91mpack[0m[97m:[0m[97m
-[0m[97m- [0m[91mpath[0m[97m:[0m[97m [0m[33mtarget/release/deno[0m[97m
-[0m[91mtype[0m[97m:[0m[97m [0m[33mbin[0m[97m
-[0m
+pkg: deno
+url: https://github.com/denoland/deno
+desc: A modern runtime for JavaScript and TypeScript.
+collection: pkg
+install:
+  - cargo build -r --locked
+pack:
+  - path: target/release/deno
+    type: bin
 ```
 
 ## [exa.yaml](https://github.com/ogham/exa)
@@ -58,16 +55,15 @@ A modern runtime for JavaScript and TypeScript.
 A modern replacement for ls.
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mexa[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/ogham/exa[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33mA modern replacement for ls.[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33mcargo build --release[0m[97m
-[0m[91mpack[0m[97m:[0m[97m
-[0m[97m- [0m[91mpath[0m[97m:[0m[97m [0m[33m./target/release/exa[0m[97m
-[0m[91mtype[0m[97m:[0m[97m [0m[33mbin[0m[97m
-[0m
+pkg: exa
+url: https://github.com/ogham/exa
+desc: A modern replacement for ls.
+collection: pkg
+install:
+  - cargo build --release
+pack:
+  - path: ./target/release/exa
+    type: bin
 ```
 
 ## [fzf.yaml](https://github.com/junegunn/fzf)
@@ -75,16 +71,15 @@ A modern replacement for ls.
 fzf is a general-purpose command-line fuzzy finder.
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mfzf[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/junegunn/fzf[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33mfzf is a general-purpose command-line fuzzy finder.[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33mgo build -ldflags "-s -w -X main.version=$version -X main.revision=go-get"[0m[97m
-[0m[91mpack[0m[97m:[0m[97m
-[0m[97m- [0m[91mpath[0m[97m:[0m[97m [0m[33mfzf[0m[97m
-[0m[91mtype[0m[97m:[0m[97m [0m[33mbin[0m[97m
-[0m
+pkg: fzf
+url: https://github.com/junegunn/fzf
+desc: fzf is a general-purpose command-line fuzzy finder.
+collection: pkg
+install:
+  - go build -ldflags "-s -w -X main.version=$version -X main.revision=go-get"
+pack:
+  - path: fzf
+    type: bin
 ```
 
 ## [gh.yaml](github.com/cli/cli)
@@ -92,13 +87,12 @@ fzf is a general-purpose command-line fuzzy finder.
 Github's official command line tool
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mgh[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/cli/cli[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33mGithub's official command line tool[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33mmake install prefix=~/.hayashi/pack[0m[97m
-[0m
+pkg: gh
+url: https://github.com/cli/cli
+desc: Github's official command line tool
+collection: pkg
+install:
+  - make install prefix=~/.hayashi/pack
 ```
 
 ## [hayashi.yaml](https://github.com/crispybaccoon/hayashi)
@@ -106,18 +100,17 @@ Github's official command line tool
 a tiny distro-independent package manager written in Go.
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mhayashi[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/crispybaccoon/hayashi[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33ma tiny distro-independent package manager written in Go.[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33mmake[0m[97m
-[0m[91mupdate[0m[97m:[0m[97m
-[0m[97m- [0m[33mmake clean; make[0m[97m
-[0m[91mpack[0m[97m:[0m[97m
-[0m[97m- [0m[91mpath[0m[97m:[0m[97m [0m[33mhayashi[0m[97m
-[0m[91mtype[0m[97m:[0m[97m [0m[33mbin[0m[97m
-[0m
+pkg: hayashi
+url: https://github.com/crispybaccoon/hayashi
+desc: a tiny distro-independent package manager written in Go.
+collection: pkg
+install:
+  - make
+update:
+  - make clean; make
+pack:
+  - path: hayashi
+    type: bin
 ```
 
 ## [htop.yaml](https://github.com/htop-dev/htop)
@@ -125,13 +118,12 @@ a tiny distro-independent package manager written in Go.
 an interactive process viewer
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mhtop[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/htop-dev/htop[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33man interactive process viewer[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33m./autogen.sh && /configure --prefix=~/.hayashi/pack && make[0m[97m
-[0m
+pkg: htop
+url: https://github.com/htop-dev/htop
+desc: an interactive process viewer
+collection: pkg
+install:
+  - ./autogen.sh && /configure --prefix=~/.hayashi/pack && make
 ```
 
 ## [neofetch.yaml](https://github.com/dylanaraps/neofetch)
@@ -139,13 +131,12 @@ an interactive process viewer
 A command-line system information tool written in bash 3.2+
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mneofetch[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/dylanaraps/neofetch[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33mA command-line system information tool written in bash 3.2+[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33mmake PREFIX=~/.hayashi/pack install[0m[97m
-[0m
+pkg: neofetch
+url: https://github.com/dylanaraps/neofetch
+desc: A command-line system information tool written in bash 3.2+
+collection: pkg
+install:
+  - make PREFIX=~/.hayashi/pack install
 ```
 
 ## [neovim.yaml](https://github.com/neovim/neovim)
@@ -153,20 +144,19 @@ A command-line system information tool written in bash 3.2+
 Vim-fork focused on extensibility and usability.
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mneovim[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/neovim/neovim[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33mVim-fork focused on extensibility and usability.[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33mmake CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/.hayashi/pack"[0m[97m
-[0m[97m- [0m[33mmake install[0m[97m
-[0m[91mremove[0m[97m:[0m[97m
-[0m[97m- [0m[33mcmake --build build/ --target uninstall[0m[97m
-[0m[91mupdate[0m[97m:[0m[97m
-[0m[97m- [0m[33mrm build -r[0m[97m
-[0m[97m- [0m[33mmake CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/.hayashi/pack"[0m[97m
-[0m[97m- [0m[33mmake install[0m[97m
-[0m
+pkg: neovim
+url: https://github.com/neovim/neovim
+desc: Vim-fork focused on extensibility and usability.
+collection: pkg
+install:
+  - make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/.hayashi/pack"
+  - make install
+remove:
+  - cmake --build build/ --target uninstall
+update:
+  - rm build -r
+  - make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/.hayashi/pack"
+  - make install
 ```
 
 ## [ninja.yaml](github.com/ninja-build/ninja)
@@ -174,17 +164,16 @@ Vim-fork focused on extensibility and usability.
 a small build system with a focus on speed
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mninja[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/ninja-build/ninja[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33ma small build system with a focus on speed[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33mcmake -Bbuild-cmake[0m[97m
-[0m[97m- [0m[33mcmake --build build-cmake[0m[97m
-[0m[91mpack[0m[97m:[0m[97m
-[0m[97m- [0m[91mpath[0m[97m:[0m[97m [0m[33mbuild-cmake/ninja[0m[97m
-[0m[91mtype[0m[97m:[0m[97m [0m[33mbin[0m[97m
-[0m
+pkg: ninja
+url: https://github.com/ninja-build/ninja
+desc: a small build system with a focus on speed
+collection: pkg
+install:
+  - cmake -Bbuild-cmake
+  - cmake --build build-cmake
+pack:
+  - path: build-cmake/ninja
+    type: bin
 ```
 
 ## [niru.yaml](https://github.com/crispybaccoon/niru)
@@ -192,16 +181,15 @@ a small build system with a focus on speed
 a command line config manager built in rust.
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mniru[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/crispybaccoon/niru[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33ma command line config manager built in rust.[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33mcargo build -r[0m[97m
-[0m[91mpack[0m[97m:[0m[97m
-[0m[97m- [0m[91mpath[0m[97m:[0m[97m [0m[33mtarget/release/niru[0m[97m
-[0m[91mtype[0m[97m:[0m[97m [0m[33mbin[0m[97m
-[0m
+pkg: niru
+url: https://github.com/crispybaccoon/niru
+desc: a command line config manager built in rust.
+collection: pkg
+install:
+  - cargo build -r
+pack:
+  - path: target/release/niru
+    type: bin
 ```
 
 ## [ohmyzsh.yaml](https://github.com/ohmyzsh/ohmyzsh)
@@ -209,13 +197,12 @@ a command line config manager built in rust.
 A delightful framework for managing your zsh configuration.
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mohmyzsh[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/ohmyzsh/ohmyzsh[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33mA delightful framework for managing your zsh configuration.[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33msh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc --unattended[0m[97m
-[0m
+pkg: ohmyzsh
+url: https://github.com/ohmyzsh/ohmyzsh
+desc: A delightful framework for managing your zsh configuration.
+collection: pkg
+install:
+  - sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc --unattended
 ```
 
 ## [ripgrep.yaml](https://github.com/BurntSushi/ripgrep)
@@ -223,16 +210,15 @@ A delightful framework for managing your zsh configuration.
 Recursively search directories for a regex pattern.
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mripgrep[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/BurntSushi/ripgrep[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33mRecursively search directories for a regex pattern.[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33mcargo build --release[0m[97m
-[0m[91mpack[0m[97m:[0m[97m
-[0m[97m- [0m[91mpath[0m[97m:[0m[97m [0m[33mtarget/release/rg[0m[97m
-[0m[91mtype[0m[97m:[0m[97m [0m[33mbin[0m[97m
-[0m
+pkg: ripgrep
+url: https://github.com/BurntSushi/ripgrep
+desc: Recursively search directories for a regex pattern.
+collection: pkg
+install:
+  - cargo build --release
+pack:
+  - path: target/release/rg
+    type: bin
 ```
 
 ## [rust.yaml](https://github.com/rust-lang/rustup)
@@ -240,13 +226,12 @@ Recursively search directories for a regex pattern.
 The Rust toolchain installer
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mrust[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/rust-lang/rustup[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33mThe Rust toolchain installer[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33mcurl https://sh.rustup.rs -sSf | sh -s -- -y[0m[97m
-[0m
+pkg: rust
+url: https://github.com/rust-lang/rustup
+desc: The Rust toolchain installer
+collection: pkg
+install:
+  - curl https://sh.rustup.rs -sSf | sh -s -- -y
 ```
 
 ## [tmux.yaml](github.com/tmux/tmux)
@@ -254,19 +239,18 @@ The Rust toolchain installer
 tmux is a terminal multiplexer.
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mtmux[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/tmux/tmux[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33mtmux is a terminal multiplexer.[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33msh autogen.sh[0m[97m
-[0m[97m- [0m[33m./configure[0m[97m
-[0m[97m- [0m[33mmake[0m[97m
-[0m[97m- [0m[33mmake prefix=$HOME/.hayashi/pack install[0m[97m
-[0m[91mupdate[0m[97m:[0m[97m
-[0m[97m- [0m[33mmake[0m[97m
-[0m[97m- [0m[33mmake prefix=$HOME/.hayashi/pack install[0m[97m
-[0m
+pkg: tmux
+url: https://github.com/tmux/tmux
+desc: tmux is a terminal multiplexer.
+collection: pkg
+install:
+  - sh autogen.sh
+  - ./configure
+  - make
+  - make prefix=$HOME/.hayashi/pack install
+update:
+  - make
+  - make prefix=$HOME/.hayashi/pack install
 ```
 
 ## [vim-plug.yaml](https://github.com/junegunn/vim-plug)
@@ -274,14 +258,13 @@ tmux is a terminal multiplexer.
 A minimalist Vim plugin manager.
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mvim-plug[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/junegunn/vim-plug[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33mA minimalist Vim plugin manager.[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33mmkdir -p "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload[0m[97m
-[0m[97m- [0m[33mcp plug.vim "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/[0m[97m
-[0m
+pkg: vim-plug
+url: https://github.com/junegunn/vim-plug
+desc: A minimalist Vim plugin manager.
+collection: pkg
+install:
+  - mkdir -p "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload
+  - cp plug.vim "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/
 ```
 
 ## [vtcol.yaml](gitlab.com/phgsng/vtcol.git)
@@ -289,44 +272,41 @@ A minimalist Vim plugin manager.
 Change the color scheme of the virtual Linux console.
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mvtcol[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://gitlab.com/phgsng/vtcol.git[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33mChange the color scheme of the virtual Linux console.[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33mmake[0m[97m
-[0m[91mpack[0m[97m:[0m[97m
-[0m[97m- [0m[91mpath[0m[97m:[0m[97m [0m[33m./target/release/vtcol[0m[97m
-[0m[91mtype[0m[97m:[0m[97m [0m[33mbin[0m[97m
-[0m
+pkg: vtcol
+url: https://gitlab.com/phgsng/vtcol.git
+desc: Change the color scheme of the virtual Linux console.
+collection: pkg
+install:
+  - make
+pack:
+  - path: ./target/release/vtcol
+    type: bin
 ```
 
 ## [wezterm.yaml](github.com/wez/wezterm)
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mwezterm[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/wez/wezterm[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33mcargo build -r[0m[97m
-[0m[91mpack[0m[97m:[0m[97m
-[0m[97m- [0m[91mpath[0m[97m:[0m[97m [0m[33mtarget/release/wezterm target/release/wezterm-gui[0m[97m
-[0m[91mtype[0m[97m:[0m[97m [0m[33mbin[0m[97m
-[0m
+pkg: wezterm
+url: https://github.com/wez/wezterm
+collection: pkg
+install:
+  - cargo build -r
+pack:
+  - path: target/release/wezterm target/release/wezterm-gui
+    type: bin
 ```
 
 ## [zk.yaml](github.com/mickael-menu/zk)
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mzk[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mhttps://github.com/mickael-menu/zk[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33mmake[0m[97m
-[0m[91mpack[0m[97m:[0m[97m
-[0m[97m- [0m[91mpath[0m[97m:[0m[97m [0m[33mzk[0m[97m
-[0m[91mtype[0m[97m:[0m[97m [0m[33mbin[0m[97m
-[0m
+pkg: zk
+url: https://github.com/mickael-menu/zk
+collection: pkg
+install:
+  - make
+pack:
+  - path: zk
+    type: bin
 ```
 
 ## [zsh.yaml](git://git.code.sf.net/p/zsh/code)
@@ -334,21 +314,20 @@ Change the color scheme of the virtual Linux console.
 the default osx shell
 
 ```yaml
-[91mpkg[0m[97m:[0m[97m [0m[33mzsh[0m[97m
-[0m[91murl[0m[97m:[0m[97m [0m[33mgit://git.code.sf.net/p/zsh/code[0m[97m
-[0m[91mdesc[0m[97m:[0m[97m [0m[33mthe default osx shell[0m[97m
-[0m[91mcollection[0m[97m:[0m[97m [0m[33mpkg[0m[97m
-[0m[91minstall[0m[97m:[0m[97m
-[0m[97m- [0m[33m./Util/preconfig[0m[97m
-[0m[97m- [0m[33m./configure[0m[97m
-[0m[97m- [0m[33mmake[0m[97m
-[0m[91mupdate[0m[97m:[0m[97m
-[0m[97m- [0m[33mmake[0m[97m
-[0m[91mpack[0m[97m:[0m[97m
-[0m[97m- [0m[91mpath[0m[97m:[0m[97m [0m[33mSrc/zsh[0m[97m
-[0m[91mtype[0m[97m:[0m[97m [0m[33mbin[0m[97m
-[0m[97m- [0m[91mpath[0m[97m:[0m[97m [0m[97m|[0m[37m
-[0m[97m        [0m[33mDoc/zsh.1 Doc/zshbuiltins.1 Doc/zshcalsys.1 Doc/zshcompctl.1 Doc/zshcompwid.1 Doc/zshcompsys.1 Doc/zshcontrib.1 Doc/zshexpn.1 Doc/zshmisc.1 Doc/zshmodules.1 Doc/zshoptions.1 Doc/zshparam.1 Doc/zshroadmap.1 Doc/zshtcpsys.1 Doc/zshzftpsys.1 Doc/zshzle.1 Doc/zshall.1[0m[97m
-[0m[91mtype[0m[97m:[0m[97m [0m[33mshare/man[0m[97m
-[0m
+pkg: zsh
+url: git://git.code.sf.net/p/zsh/code
+desc: the default osx shell
+collection: pkg
+install:
+  - ./Util/preconfig
+  - ./configure
+  - make
+update:
+  - make
+pack:
+  - path: Src/zsh
+    type: bin
+  - path: |
+      Doc/zsh.1 Doc/zshbuiltins.1 Doc/zshcalsys.1 Doc/zshcompctl.1 Doc/zshcompwid.1 Doc/zshcompsys.1 Doc/zshcontrib.1 Doc/zshexpn.1 Doc/zshmisc.1 Doc/zshmodules.1 Doc/zshoptions.1 Doc/zshparam.1 Doc/zshroadmap.1 Doc/zshtcpsys.1 Doc/zshzftpsys.1 Doc/zshzle.1 Doc/zshall.1
+    type: share/man
 ```
