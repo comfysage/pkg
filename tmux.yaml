@@ -1,5 +1,5 @@
 pkg:  tmux
-url:  github.com/tmux/tmux
+url:  tmux/tmux
 desc: tmux is a terminal multiplexer.
 
 install:
