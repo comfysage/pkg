@@ -1,5 +1,5 @@
 pkg:  bat
-url:  https://github.com/sharkdp/bat
+url:  sharkdp/bat
 desc: A cat(1) clone with wings.
 
 install:
