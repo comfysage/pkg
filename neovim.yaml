@@ -1,5 +1,5 @@
 pkg:  neovim
-url:  https://github.com/neovim/neovim
+url:  neovim/neovim
 desc: Vim-fork focused on extensibility and usability.
 
 install:
