@@ -2,7 +2,7 @@
 
 This page features a list of core packages. **This page is auto-generated.**
 
-## [bat.yaml](https://github.com/sharkdp/bat)
+## [bat.yaml](sharkdp/bat)
 
 A cat(1) clone with wings.
 
@@ -34,23 +34,7 @@ pack:
     type: bin
 ```
 
-## [deno.yaml](github.com/denoland/deno)
-
-A modern runtime for JavaScript and TypeScript.
-
-```yaml
-pkg: deno
-url: https://github.com/denoland/deno
-desc: A modern runtime for JavaScript and TypeScript.
-collection: pkg
-install:
-  - cargo build -r --locked
-pack:
-  - path: target/release/deno
-    type: bin
-```
-
-## [exa.yaml](https://github.com/ogham/exa)
+## [exa.yaml](ogham/exa)
 
 A modern replacement for ls.
 
@@ -66,7 +50,7 @@ pack:
     type: bin
 ```
 
-## [fzf.yaml](https://github.com/junegunn/fzf)
+## [fzf.yaml](junegunn/fzf)
 
 fzf is a general-purpose command-line fuzzy finder.
 
@@ -82,7 +66,7 @@ pack:
     type: bin
 ```
 
-## [gh.yaml](github.com/cli/cli)
+## [gh.yaml](cli/cli)
 
 Github's official command line tool
 
@@ -95,7 +79,7 @@ install:
   - make install prefix=~/.hayashi/pack
 ```
 
-## [hayashi.yaml](https://github.com/crispybaccoon/hayashi)
+## [hayashi.yaml](crispybaccoon/hayashi)
 
 a tiny distro-independent package manager written in Go.
 
@@ -113,20 +97,7 @@ pack:
     type: bin
 ```
 
-## [htop.yaml](https://github.com/htop-dev/htop)
-
-an interactive process viewer
-
-```yaml
-pkg: htop
-url: https://github.com/htop-dev/htop
-desc: an interactive process viewer
-collection: pkg
-install:
-  - ./autogen.sh && /configure --prefix=~/.hayashi/pack && make
-```
-
-## [neofetch.yaml](https://github.com/dylanaraps/neofetch)
+## [neofetch.yaml](dylanaraps/neofetch)
 
 A command-line system information tool written in bash 3.2+
 
@@ -139,7 +110,7 @@ install:
   - make PREFIX=~/.hayashi/pack install
 ```
 
-## [neovim.yaml](https://github.com/neovim/neovim)
+## [neovim.yaml](neovim/neovim)
 
 Vim-fork focused on extensibility and usability.
 
@@ -159,7 +130,7 @@ update:
   - make install
 ```
 
-## [ninja.yaml](github.com/ninja-build/ninja)
+## [ninja.yaml](ninja-build/ninja)
 
 a small build system with a focus on speed
 
@@ -176,7 +147,7 @@ pack:
     type: bin
 ```
 
-## [niru.yaml](https://github.com/crispybaccoon/niru)
+## [niru.yaml](crispybaccoon/niru)
 
 a command line config manager built in rust.
 
@@ -192,7 +163,7 @@ pack:
     type: bin
 ```
 
-## [ohmyzsh.yaml](https://github.com/ohmyzsh/ohmyzsh)
+## [ohmyzsh.yaml](ohmyzsh/ohmyzsh)
 
 A delightful framework for managing your zsh configuration.
 
@@ -205,7 +176,7 @@ install:
   - sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc --unattended
 ```
 
-## [ripgrep.yaml](https://github.com/BurntSushi/ripgrep)
+## [ripgrep.yaml](BurntSushi/ripgrep)
 
 Recursively search directories for a regex pattern.
 
@@ -221,7 +192,7 @@ pack:
     type: bin
 ```
 
-## [rust.yaml](https://github.com/rust-lang/rustup)
+## [rust.yaml](rust-lang/rustup)
 
 The Rust toolchain installer
 
@@ -234,7 +205,7 @@ install:
   - curl https://sh.rustup.rs -sSf | sh -s -- -y
 ```
 
-## [tmux.yaml](github.com/tmux/tmux)
+## [tmux.yaml](tmux/tmux)
 
 tmux is a terminal multiplexer.
 
@@ -253,7 +224,7 @@ update:
   - make prefix=$HOME/.hayashi/pack install
 ```
 
-## [vim-plug.yaml](https://github.com/junegunn/vim-plug)
+## [vim-plug.yaml](junegunn/vim-plug)
 
 A minimalist Vim plugin manager.
 
@@ -283,20 +254,7 @@ pack:
     type: bin
 ```
 
-## [wezterm.yaml](github.com/wez/wezterm)
-
-```yaml
-pkg: wezterm
-url: https://github.com/wez/wezterm
-collection: pkg
-install:
-  - cargo build -r
-pack:
-  - path: target/release/wezterm target/release/wezterm-gui
-    type: bin
-```
-
-## [zk.yaml](github.com/mickael-menu/zk)
+## [zk.yaml](mickael-menu/zk)
 
 ```yaml
 pkg: zk
@@ -307,27 +265,4 @@ install:
 pack:
   - path: zk
     type: bin
-```
-
-## [zsh.yaml](git://git.code.sf.net/p/zsh/code)
-
-the default osx shell
-
-```yaml
-pkg: zsh
-url: git://git.code.sf.net/p/zsh/code
-desc: the default osx shell
-collection: pkg
-install:
-  - ./Util/preconfig
-  - ./configure
-  - make
-update:
-  - make
-pack:
-  - path: Src/zsh
-    type: bin
-  - path: |
-      Doc/zsh.1 Doc/zshbuiltins.1 Doc/zshcalsys.1 Doc/zshcompctl.1 Doc/zshcompwid.1 Doc/zshcompsys.1 Doc/zshcontrib.1 Doc/zshexpn.1 Doc/zshmisc.1 Doc/zshmodules.1 Doc/zshoptions.1 Doc/zshparam.1 Doc/zshroadmap.1 Doc/zshtcpsys.1 Doc/zshzftpsys.1 Doc/zshzle.1 Doc/zshall.1
-    type: share/man
 ```
