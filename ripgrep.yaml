@@ -1,5 +1,5 @@
 pkg:  ripgrep
-url:  https://github.com/BurntSushi/ripgrep
+url:  BurntSushi/ripgrep
 desc: Recursively search directories for a regex pattern.
 
 pack:
