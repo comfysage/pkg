@@ -1,5 +1,5 @@
 pkg: gh
-url: github.com/cli/cli
+url: cli/cli
 desc: Github's official command line tool
 
 install:
