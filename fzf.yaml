@@ -1,5 +1,5 @@
 pkg:  fzf
-url:  https://github.com/junegunn/fzf
+url:  junegunn/fzf
 desc: fzf is a general-purpose command-line fuzzy finder.
 
 pack:
