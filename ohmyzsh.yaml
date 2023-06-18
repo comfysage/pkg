@@ -1,5 +1,5 @@
 pkg:  ohmyzsh
-url:  https://github.com/ohmyzsh/ohmyzsh
+url:  ohmyzsh/ohmyzsh
 desc: A delightful framework for managing your zsh configuration.
 
 install:
