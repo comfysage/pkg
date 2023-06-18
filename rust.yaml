@@ -1,5 +1,5 @@
 pkg:  rust
-url:  https://github.com/rust-lang/rustup
+url:  rust-lang/rustup
 desc: The Rust toolchain installer
 
 install:
