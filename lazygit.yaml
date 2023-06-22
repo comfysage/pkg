@@ -1,0 +1,10 @@
+pkg:  lazygit
+url:  jesseduffield/lazygit
+desc: simple terminal UI for git commands
+
+pack:
+  - path: lazygit
+    type: bin
+
+install:
+  - go build .
