@@ -1,6 +1,7 @@
 pkg:  rust
 url:  rust-lang/rustup
 desc: The Rust toolchain installer
+clone: false
 
 install:
   - curl https://sh.rustup.rs -sSf | sh -s -- -y
