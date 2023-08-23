@@ -11,4 +11,5 @@ install:
 
 update:
   - make clean; make
+  - unlink ~/.hayashi/pack/bin/hayashi
 
