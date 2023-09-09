@@ -2,7 +2,7 @@
 
 This page features a list of core packages. **This page is auto-generated.**
 
-## [bat.yaml](https://github.com/sharkdp/bat[0m)
+## [bat.yaml](https://github.com/sharkdp/bat)
 
  A cat(1) clone with wings.
 ```yaml
@@ -18,7 +18,7 @@ pack:
       type: bin
 ```
 
-## [cbonsai.yaml](https://gitlab.com/jallbrit/cbonsai[0m)
+## [cbonsai.yaml](https://gitlab.com/jallbrit/cbonsai)
 
  a bonsai tree generator written in C.
 ```yaml
@@ -34,7 +34,7 @@ pack:
       type: bin
 ```
 
-## [exa.yaml](https://github.com/ogham/exa[0m)
+## [exa.yaml](https://github.com/ogham/exa)
 
  A modern replacement for ls.
 ```yaml
@@ -50,7 +50,7 @@ pack:
       type: bin
 ```
 
-## [fzf.yaml](https://github.com/junegunn/fzf[0m)
+## [fzf.yaml](https://github.com/junegunn/fzf)
 
  fzf is a general-purpose command-line fuzzy finder.
 ```yaml
@@ -66,7 +66,7 @@ pack:
       type: bin
 ```
 
-## [gh.yaml](https://github.com/cli/cli[0m)
+## [gh.yaml](https://github.com/cli/cli)
 
  Github's official command line tool
 ```yaml
@@ -79,7 +79,7 @@ install:
     - make install prefix=~/.hayashi/pack
 ```
 
-## [hayashi.yaml](https://github.com/crispybaccoon/hayashi[0m)
+## [hayashi.yaml](https://github.com/crispybaccoon/hayashi)
 
  a tiny distro-independent package manager written in Go.
 ```yaml
@@ -98,7 +98,7 @@ pack:
       type: bin
 ```
 
-## [lazygit.yaml](https://github.com/jesseduffield/lazygit[0m)
+## [lazygit.yaml](https://github.com/jesseduffield/lazygit)
 
  simple terminal UI for git commands
 ```yaml
@@ -114,7 +114,7 @@ pack:
       type: bin
 ```
 
-## [lime.yaml](https://github.com/crispybaccoon/lime[0m)
+## [lime.yaml](https://github.com/crispybaccoon/lime)
 
  a tiny zsh configuration manager.
 ```yaml
@@ -130,7 +130,7 @@ update:
     - ./tools/upgrade.sh && hayashi changelog lime
 ```
 
-## [neofetch.yaml](https://github.com/dylanaraps/neofetch[0m)
+## [neofetch.yaml](https://github.com/dylanaraps/neofetch)
 
  A command-line system information tool written in bash 3.2+
 ```yaml
@@ -143,7 +143,7 @@ install:
     - make PREFIX=~/.hayashi/pack install
 ```
 
-## [neovim.yaml](https://github.com/neovim/neovim[0m)
+## [neovim.yaml](https://github.com/neovim/neovim)
 
  Vim-fork focused on extensibility and usability.
 ```yaml
@@ -163,7 +163,7 @@ update:
     - make install
 ```
 
-## [ninja.yaml](https://github.com/ninja-build/ninja[0m)
+## [ninja.yaml](https://github.com/ninja-build/ninja)
 
  a small build system with a focus on speed
 ```yaml
@@ -180,7 +180,7 @@ pack:
       type: bin
 ```
 
-## [niru.yaml](https://github.com/crispybaccoon/niru[0m)
+## [niru.yaml](https://github.com/crispybaccoon/niru)
 
  a command line config manager built in rust.
 ```yaml
@@ -196,7 +196,7 @@ pack:
       type: bin
 ```
 
-## [ohmyzsh.yaml](https://github.com/ohmyzsh/ohmyzsh[0m)
+## [ohmyzsh.yaml](https://github.com/ohmyzsh/ohmyzsh)
 
  A delightful framework for managing your zsh configuration.
 ```yaml
@@ -212,7 +212,7 @@ update:
     - ./tools/upgrade.sh && ./tools/changelog.sh
 ```
 
-## [ripgrep.yaml](https://github.com/BurntSushi/ripgrep[0m)
+## [ripgrep.yaml](https://github.com/BurntSushi/ripgrep)
 
  Recursively search directories for a regex pattern.
 ```yaml
@@ -228,7 +228,7 @@ pack:
       type: bin
 ```
 
-## [rust.yaml](https://github.com/rust-lang/rustup[0m)
+## [rust.yaml](https://github.com/rust-lang/rustup)
 
  The Rust toolchain installer
 ```yaml
@@ -240,7 +240,7 @@ install:
     - curl https://sh.rustup.rs -sSf | sh -s -- -y
 ```
 
-## [tmux.yaml](https://github.com/tmux/tmux[0m)
+## [tmux.yaml](https://github.com/tmux/tmux)
 
  tmux is a terminal multiplexer.
 ```yaml
@@ -259,7 +259,7 @@ update:
     - make prefix=$HOME/.hayashi/pack install
 ```
 
-## [vim-plug.yaml](https://github.com/junegunn/vim-plug[0m)
+## [vim-plug.yaml](https://github.com/junegunn/vim-plug)
 
  A minimalist Vim plugin manager.
 ```yaml
@@ -273,7 +273,7 @@ install:
     - cp plug.vim "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/
 ```
 
-## [vtcol.yaml](https://gitlab.com/phgsng/vtcol.git[0m)
+## [vtcol.yaml](https://gitlab.com/phgsng/vtcol.git)
 
  Change the color scheme of the virtual Linux console.
 ```yaml
@@ -289,7 +289,7 @@ pack:
       type: bin
 ```
 
-## [wezterm.yaml](https://github.com/wez/wezterm[0m)
+## [wezterm.yaml](https://github.com/wez/wezterm)
 
 
 ```yaml
@@ -304,7 +304,7 @@ pack:
       type: bin
 ```
 
-## [zk.yaml](https://github.com/mickael-menu/zk[0m)
+## [zk.yaml](https://github.com/mickael-menu/zk)
 
 
 ```yaml
