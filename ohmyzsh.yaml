@@ -3,4 +3,8 @@ url:  ohmyzsh/ohmyzsh
 desc: A delightful framework for managing your zsh configuration.
 
 install:
-    - sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc --unattended
+    - echo "add \`export ZSH=\"$HOME/.hayashi/repo/ohmyzsh\"\`"
+    - echo 'and `source $ZSH/oh-my-zsh.sh` to your `~/.zshrc`'
+
+update:
+    - ./tools/upgrade.sh && ./tools/changelog.sh
