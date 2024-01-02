@@ -1,0 +1,10 @@
+pkg:  eza
+url:  eza-community/eza
+desc: A modern replacement for ls.
+
+pack:
+  - path: ./target/release/eza
+    type: bin
+
+install:
+  - cargo build --release
