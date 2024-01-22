@@ -1,0 +1,7 @@
+pkgname="exa"
+url="ogham/exa"
+pkgdesc="A modern replacement for ls."
+
+bin=("exa")
+template=("cargo")
+makedepends=("cargo")

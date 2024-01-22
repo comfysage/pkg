@@ -1,0 +1,13 @@
+pkgname="gh"
+url="cli/cli"
+pkgdesc="Github's official command line tool"
+
+makedepends=("make")
+
+package() {
+  make install prefix=$rootdir
+}
+
+remove() {
+  make uninstall prefix=$rootdir
+}

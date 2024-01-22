@@ -1,0 +1,7 @@
+pkgname="bat"
+url="sharkdp/bat"
+pkgdesc="A cat(1) clone with wings."
+
+bin=("bat")
+template=("cargo")
+makedepends=("cargo")

@@ -1,0 +1,7 @@
+pkgname="rustup"
+url="rust-lang/rustup"
+pkgdesc="The Rust toolchain installer"
+
+build() {
+  curl https://sh.rustup.rs -sSf | sh -s -- -y
+}

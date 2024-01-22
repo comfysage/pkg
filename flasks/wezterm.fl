@@ -1,0 +1,6 @@
+pkgname="wezterm"
+url="wez/wezterm"
+
+bin=("wezterm" "wezterm-gui")
+template=("cargo")
+makedepends=("cargo")

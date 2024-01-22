@@ -1,0 +1,13 @@
+pkgname="zk"
+url="mickael-menu/zk"
+pkgdesc="A plain text note-taking assistant"
+
+makedepends=("make" "go")
+
+build() {
+  make
+}
+
+package() {
+  install bin zk
+}

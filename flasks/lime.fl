@@ -1,0 +1,16 @@
+pkgname="lime"
+url="crispybaccoon/lime"
+pkgdesc="a tiny zsh configuration manager."
+
+build() {
+  ./tools/upgrade.sh
+}
+
+package() {
+  echo "add \`export ZSH=\"$srcdir\"\`"
+  echo 'and `source $ZSH/lime.sh` to your `~/.zshrc`'
+}
+
+remove() {
+  ./tools/uninstall.sh
+}

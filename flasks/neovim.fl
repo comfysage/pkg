@@ -1,0 +1,21 @@
+pkgname="neovim"
+url="neovim/neovim"
+pkgdesc="Vim-fork focused on extensibility and usability."
+
+makedepends=("make" "cmake")
+
+prepare() {
+  make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$rootdir"
+}
+
+build() {
+  make install
+}
+
+preupdate() {
+  rm build -r
+}
+
+remove() {
+  cmake --build build/ --target uninstall
+}

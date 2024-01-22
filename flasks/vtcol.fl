@@ -1,0 +1,13 @@
+pkgname="vtcol"
+url="gitlab.com/phgsng/vtcol"
+pkgdesc="Change the color scheme of the virtual Linux console."
+
+makedepends=("make" "cargo")
+
+build() {
+  make
+}
+
+package() {
+  install bin target/release/vtcol
+}

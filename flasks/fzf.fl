@@ -1,0 +1,13 @@
+pkgname="fzf"
+url="junegunn/fzf"
+pkgdesc="fzf is a general-purpose command-line fuzzy finder."
+
+makedepends=("go")
+
+build() {
+  go build -ldflags "-s -w -X main.revision=go-get"
+}
+
+package() {
+  install bin fzf
+}

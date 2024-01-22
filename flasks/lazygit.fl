@@ -1,0 +1,13 @@
+pkgname="lazygit"
+url="jesseduffield/lazygit"
+pkgdesc="simple terminal UI for git commands"
+
+makedepends=("go")
+
+build() {
+  go build .
+}
+
+package() {
+  install bin lazygit
+}

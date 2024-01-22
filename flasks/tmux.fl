@@ -1,0 +1,19 @@
+pkgname="tmux"
+url="tmux/tmux"
+pkgdesc="tmux is a terminal multiplexer."
+
+makedepends=("make" "cmake")
+
+prepare() {
+  sh autogen.sh
+  ./configure
+}
+
+build() {
+  make
+  make prefix=$rootdir install
+}
+
+remove() {
+  make prefix=$rootdir uninstall
+}

@@ -1,0 +1,13 @@
+pkgname="neofetch"
+url="dylanaraps/neofetch"
+pkgdesc="A command-line system information tool written in bash 3.2+"
+
+makedepends=("make")
+
+build() {
+  make prefix=$rootdir install
+}
+
+remove() {
+  make prefix=$rootdir uninstall
+}

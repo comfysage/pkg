@@ -1,0 +1,18 @@
+pkgname="saku"
+url="crispybaccoon/saku"
+pkgdesc="a tiny distro-independent package manager written in Rust."
+
+makedepends=("make" "cargo")
+
+build() {
+  make
+}
+
+package() {
+  install bin target/release/saku
+}
+
+preupdate() {
+  make clean all
+  unlink $rootdir/bin/saku
+}
