@@ -1,0 +1,7 @@
+pkgname="starship"
+url="starship/starship"
+pkgdesc="The minimal, blazing-fast, and infinitely customizable prompt for any shell"
+
+bin=("starship")
+template=("cargo")
+makedepends=("cargo")
