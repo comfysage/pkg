@@ -1,0 +1,7 @@
+pkgname="ripgrep"
+url="BurntSushi/ripgrep"
+pkgdesc="Recursively search directories for a regex pattern."
+
+bin=("rg")
+template=("cargo")
+makedepends=("cargo")
