@@ -5,13 +5,13 @@ pkgdesc="A command-line system information tool written in bash 3.2+"
 makedepends=("make")
 
 build() {
+  make
+}
+
+package() {
   make PREFIX=$storedir install
 }
 
 remove() {
   make PREFIX=$storedir uninstall
-}
-
-package() {
-  install_file bin neofetch
 }

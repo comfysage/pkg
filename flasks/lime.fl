@@ -3,7 +3,7 @@ url="crispybaccoon/lime"
 pkgdesc="a tiny zsh configuration manager."
 
 build() {
-  ./tools/upgrade.sh
+  ./tools/install.sh
 }
 
 package() {

@@ -11,9 +11,8 @@ prepare() {
 
 build() {
   make
-  make prefix=$rootdir install
 }
 
-remove() {
-  make prefix=$rootdir uninstall
+package() {
+  make prefix=$storedir install
 }

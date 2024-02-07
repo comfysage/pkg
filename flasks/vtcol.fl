@@ -9,5 +9,5 @@ build() {
 }
 
 package() {
-  install bin target/release/vtcol
+  store target/release/vtcol bin/vtcol
 }

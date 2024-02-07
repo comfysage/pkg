@@ -2,17 +2,10 @@ pkgname="saku"
 url="crispybaccoon/saku"
 pkgdesc="a tiny distro-independent package manager written in Rust."
 
+bin=("sk")
+template=("cargo")
 makedepends=("make" "cargo")
 
-build() {
-  make
-}
-
-package() {
-  install bin target/release/saku
-}
-
 preupdate() {
-  make clean all
-  unlink $rootdir/bin/saku
+  unlink $storedir/bin/saku
 }

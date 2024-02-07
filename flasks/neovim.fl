@@ -5,11 +5,11 @@ pkgdesc="Vim-fork focused on extensibility and usability."
 makedepends=("make" "cmake")
 
 prepare() {
-  make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$rootdir"
+  make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$storedir"
 }
 
 build() {
-  make install
+  make
 }
 
 preupdate() {
@@ -18,4 +18,15 @@ preupdate() {
 
 remove() {
   cmake --build build/ --target uninstall
+}
+
+package() {
+  # install_file man src/man/nvim.1
+  # install_file bin build/bin/nvim
+  # ln -sfT $storedir/share/nvim $sakudir/root/share/nvim
+  # mkdir -p $sakudir/root/share/applications
+  # ln -sfT $storedir/share/nvim/applications/nvim.desktop $sakudir/root/share/applications/nvim.desktop
+  # mkdir -p $sakudir/root/lib
+  # ln -sfT $storedir/lib/nvim $sakudir/root/lib/nvim
+  make install
 }

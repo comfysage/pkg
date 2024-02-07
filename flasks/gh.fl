@@ -5,9 +5,9 @@ pkgdesc="Github's official command line tool"
 makedepends=("make")
 
 package() {
-  make install prefix=$rootdir
+  make prefix=$storedir install
 }
 
 remove() {
-  make uninstall prefix=$rootdir
+  make prefix=$storedir uninstall
 }

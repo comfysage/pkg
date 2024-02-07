@@ -9,5 +9,5 @@ build() {
 }
 
 package() {
-  install bin lazygit
+  store lazygit bin/lazygit
 }
