@@ -1,0 +1,7 @@
+pkgname="eza"
+url="eza-community/eza"
+pkgdesc="A modern replacement for ls."
+
+bin=("eza")
+template=("cargo")
+makedepends=("cargo")
