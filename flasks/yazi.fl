@@ -1,0 +1,7 @@
+pkgname="yazi"
+url="sxyazi/yazi"
+pkgdesc="Blazing fast terminal file manager written in Rust, based on async I/O."
+
+bin=("yazi")
+template=("cargo")
+makedepends=("cargo")
