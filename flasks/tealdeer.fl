@@ -1,0 +1,7 @@
+pkgname="tealdeer"
+url="dbrgn/tealdeer"
+pkgdesc="A very fast implementation of tldr in Rust."
+
+bin=("tldr")
+template=("cargo")
+makedepends=("cargo")
