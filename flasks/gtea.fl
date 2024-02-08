@@ -1,0 +1,7 @@
+pkgname="gtea"
+url="crispybaccoon/gtea"
+pkgdesc="a tiny git helper."
+
+bin=("gtea")
+template=("cargo")
+makedepends=("cargo")
