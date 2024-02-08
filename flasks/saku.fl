@@ -5,7 +5,3 @@ pkgdesc="a tiny distro-independent package manager written in Rust."
 bin=("sk")
 template=("cargo")
 makedepends=("make" "cargo")
-
-preupdate() {
-  unlink $storedir/bin/saku
-}
