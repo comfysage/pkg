@@ -1,0 +1,7 @@
+pkgname="kittysay"
+url="uncenter/kittysay"
+pkgdesc="The cutest successor of cowsay."
+
+bin=("kittysay")
+template=("cargo")
+makedepends=("cargo")
