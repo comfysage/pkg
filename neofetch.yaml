@@ -1,6 +1,0 @@
-pkg:  neofetch
-url:  dylanaraps/neofetch
-desc: A command-line system information tool written in bash 3.2+
-
-install:
-  - make PREFIX=~/.hayashi/pack install

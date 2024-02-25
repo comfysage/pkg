@@ -1,9 +1,0 @@
-pkg: wezterm
-url: wez/wezterm
-
-pack:
-  - path: target/release/wezterm target/release/wezterm-gui
-    type: bin
-
-install:
-  - cargo build -r

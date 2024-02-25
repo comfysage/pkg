@@ -1,6 +1,0 @@
-pkg: gh
-url: cli/cli
-desc: Github's official command line tool
-
-install:
-  - make install prefix=~/.hayashi/pack
