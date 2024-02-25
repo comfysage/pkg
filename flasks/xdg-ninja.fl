@@ -1,0 +1,13 @@
+pkgname="xdg-ninja"
+url="b3nj5m1n/xdg-ninja"
+pkgdesc="A shell script which checks your *$$HOME* for unwanted files and directories."
+
+makedepends=("make")
+
+package() {
+  make PREFIX=$storedir install
+}
+
+remove() {
+  make PREFIX=$storedir uninstall
+}
