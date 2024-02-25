@@ -1,0 +1,19 @@
+pkgname="panvimdoc"
+url="kdheepak/panvimdoc"
+pkgdesc="Write documentation in pandoc markdown. Generate documentation in vimdoc."
+
+depends=("pandoc")
+
+package() {
+  mkdir -p $storedir/bin
+  SHARE_DIR="$storedir/share/panvimdoc"
+  mkdir -p $SHARE_DIR
+  cat <<EOF > $storedir/bin/panvimdoc.sh
+#!/usr/bin/env bash
+SCRIPTS_DIR="$SHARE_DIR/scripts" $SHARE_DIR/bin/panvimdoc.sh "\$@"
+EOF
+
+  cp -r scripts $SHARE_DIR/
+  mkdir -p $SHARE_DIR/bin
+  cp panvimdoc.sh $SHARE_DIR/bin/
+}
