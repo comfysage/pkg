@@ -2,319 +2,210 @@
 
 This page features a list of core packages. **This page is auto-generated.**
 
-## [bat.yaml](https://github.com/sharkdp/bat)
+## [bat](https://github.com/crispybaccoon/pkg/tree/mega/flasks/bat.fl)
 
- A cat(1) clone with wings.
-```yaml
-pkg: bat
-url: https://github.com/sharkdp/bat
-desc: A cat(1) clone with wings.
-clone: true
-collection: pkg
-install:
-    - cargo build -r --locked bat
-pack:
-    - path: target/release/bat
-      type: bin
+```
+flasks/bat
+A cat(1) clone with wings.
+url  sharkdp/bat
 ```
 
-## [cbonsai.yaml](https://gitlab.com/jallbrit/cbonsai)
+## [exa](https://github.com/crispybaccoon/pkg/tree/mega/flasks/exa.fl)
 
- a bonsai tree generator written in C.
-```yaml
-pkg: cbonsai
-url: https://gitlab.com/jallbrit/cbonsai
-desc: a bonsai tree generator written in C.
-clone: true
-collection: pkg
-install:
-    - make cbonsai
-pack:
-    - path: cbonsai
-      type: bin
+```
+flasks/exa
+A modern replacement for ls.
+url  ogham/exa
 ```
 
-## [exa.yaml](https://github.com/ogham/exa)
+## [eza](https://github.com/crispybaccoon/pkg/tree/mega/flasks/eza.fl)
 
- A modern replacement for ls.
-```yaml
-pkg: exa
-url: https://github.com/ogham/exa
-desc: A modern replacement for ls.
-clone: true
-collection: pkg
-install:
-    - cargo build --release
-pack:
-    - path: ./target/release/exa
-      type: bin
+```
+flasks/eza
+A modern replacement for ls.
+url  eza-community/eza
 ```
 
-## [fzf.yaml](https://github.com/junegunn/fzf)
+## [fzf](https://github.com/crispybaccoon/pkg/tree/mega/flasks/fzf.fl)
 
- fzf is a general-purpose command-line fuzzy finder.
-```yaml
-pkg: fzf
-url: https://github.com/junegunn/fzf
-desc: fzf is a general-purpose command-line fuzzy finder.
-clone: true
-collection: pkg
-install:
-    - go build -ldflags "-s -w -X main.version=$version -X main.revision=go-get"
-pack:
-    - path: fzf
-      type: bin
+```
+flasks/fzf
+fzf is a general-purpose command-line fuzzy finder.
+url  junegunn/fzf
 ```
 
-## [gh.yaml](https://github.com/cli/cli)
+## [gh](https://github.com/crispybaccoon/pkg/tree/mega/flasks/gh.fl)
 
- Github's official command line tool
-```yaml
-pkg: gh
-url: https://github.com/cli/cli
-desc: Github's official command line tool
-clone: true
-collection: pkg
-install:
-    - make install prefix=~/.hayashi/pack
+```
+flasks/gh
+Github's official command line tool
+url  cli/cli
 ```
 
-## [hayashi.yaml](https://github.com/crispybaccoon/hayashi)
+## [gtea](https://github.com/crispybaccoon/pkg/tree/mega/flasks/gtea.fl)
 
- a tiny distro-independent package manager written in Go.
-```yaml
-pkg: hayashi
-url: https://github.com/crispybaccoon/hayashi
-desc: a tiny distro-independent package manager written in Go.
-clone: true
-collection: pkg
-install:
-    - make
-update:
-    - make clean; make
-    - unlink ~/.hayashi/pack/bin/hayashi
-pack:
-    - path: hayashi
-      type: bin
+```
+flasks/gtea
+a tiny git helper.
+url  crispybaccoon/gtea
 ```
 
-## [lazygit.yaml](https://github.com/jesseduffield/lazygit)
+## [kittysay](https://github.com/crispybaccoon/pkg/tree/mega/flasks/kittysay.fl)
 
- simple terminal UI for git commands
-```yaml
-pkg: lazygit
-url: https://github.com/jesseduffield/lazygit
-desc: simple terminal UI for git commands
-clone: true
-collection: pkg
-install:
-    - go build .
-pack:
-    - path: lazygit
-      type: bin
+```
+flasks/kittysay
+The cutest successor of cowsay.
+url  uncenter/kittysay
 ```
 
-## [lime.yaml](https://github.com/crispybaccoon/lime)
+## [lazygit](https://github.com/crispybaccoon/pkg/tree/mega/flasks/lazygit.fl)
 
- a tiny zsh configuration manager.
-```yaml
-pkg: lime
-url: https://github.com/crispybaccoon/lime
-desc: a tiny zsh configuration manager.
-clone: true
-collection: pkg
-install:
-    - echo "add \`export ZSH="$HOME/.hayashi/repo/lime"\`"
-    - echo 'and `source $ZSH/lime.sh` to your `~/.zshrc`'
-update:
-    - ./tools/upgrade.sh && hayashi changelog lime
+```
+flasks/lazygit
+simple terminal UI for git commands
+url  jesseduffield/lazygit
 ```
 
-## [neofetch.yaml](https://github.com/dylanaraps/neofetch)
+## [lime](https://github.com/crispybaccoon/pkg/tree/mega/flasks/lime.fl)
 
- A command-line system information tool written in bash 3.2+
-```yaml
-pkg: neofetch
-url: https://github.com/dylanaraps/neofetch
-desc: A command-line system information tool written in bash 3.2+
-clone: true
-collection: pkg
-install:
-    - make PREFIX=~/.hayashi/pack install
+```
+flasks/lime
+a tiny zsh configuration manager.
+url  crispybaccoon/lime
 ```
 
-## [neovim.yaml](https://github.com/neovim/neovim)
+## [llvm](https://github.com/crispybaccoon/pkg/tree/mega/flasks/llvm.fl)
 
- Vim-fork focused on extensibility and usability.
-```yaml
-pkg: neovim
-url: https://github.com/neovim/neovim
-desc: Vim-fork focused on extensibility and usability.
-clone: true
-collection: pkg
-install:
-    - make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/.hayashi/pack"
-    - make install
-remove:
-    - cmake --build build/ --target uninstall
-update:
-    - rm build -r
-    - make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/.hayashi/pack"
-    - make install
+```
+flasks/llvm
+the llvm compiler infrastructure
+url  llvm/llvm-project
 ```
 
-## [ninja.yaml](https://github.com/ninja-build/ninja)
+## [neofetch](https://github.com/crispybaccoon/pkg/tree/mega/flasks/neofetch.fl)
 
- a small build system with a focus on speed
-```yaml
-pkg: ninja
-url: https://github.com/ninja-build/ninja
-desc: a small build system with a focus on speed
-clone: true
-collection: pkg
-install:
-    - cmake -Bbuild-cmake
-    - cmake --build build-cmake
-pack:
-    - path: build-cmake/ninja
-      type: bin
+```
+flasks/neofetch
+A command-line system information tool written in bash 3.2+
+url  dylanaraps/neofetch
 ```
 
-## [niru.yaml](https://github.com/crispybaccoon/niru)
+## [neovim](https://github.com/crispybaccoon/pkg/tree/mega/flasks/neovim.fl)
 
- a command line config manager built in rust.
-```yaml
-pkg: niru
-url: https://github.com/crispybaccoon/niru
-desc: a command line config manager built in rust.
-clone: true
-collection: pkg
-install:
-    - cargo build -r
-pack:
-    - path: target/release/niru
-      type: bin
+```
+flasks/neovim
+Vim-fork focused on extensibility and usability.
+url  neovim/neovim
 ```
 
-## [ohmyzsh.yaml](https://github.com/ohmyzsh/ohmyzsh)
+## [panvimdoc](https://github.com/crispybaccoon/pkg/tree/mega/flasks/panvimdoc.fl)
 
- A delightful framework for managing your zsh configuration.
-```yaml
-pkg: ohmyzsh
-url: https://github.com/ohmyzsh/ohmyzsh
-desc: A delightful framework for managing your zsh configuration.
-clone: true
-collection: pkg
-install:
-    - echo "add \`export ZSH="$HOME/.hayashi/repo/ohmyzsh"\`"
-    - echo 'and `source $ZSH/oh-my-zsh.sh` to your `~/.zshrc`'
-update:
-    - ./tools/upgrade.sh && ./tools/changelog.sh
+```
+flasks/panvimdoc
+Write documentation in pandoc markdown. Generate documentation in vimdoc.
+url  kdheepak/panvimdoc
 ```
 
-## [ripgrep.yaml](https://github.com/BurntSushi/ripgrep)
+## [rebos](https://github.com/crispybaccoon/pkg/tree/mega/flasks/rebos.fl)
 
- Recursively search directories for a regex pattern.
-```yaml
-pkg: ripgrep
-url: https://github.com/BurntSushi/ripgrep
-desc: Recursively search directories for a regex pattern.
-clone: true
-collection: pkg
-install:
-    - cargo build --release
-pack:
-    - path: target/release/rg
-      type: bin
+```
+flasks/rebos
+Rebos is a tool that aims at mimicking what NixOS does (reproducibility), for any Linux distribution.
+url  gitlab.com/Oglo12/rebos
 ```
 
-## [rust.yaml](https://github.com/rust-lang/rustup)
+## [ripgrep](https://github.com/crispybaccoon/pkg/tree/mega/flasks/ripgrep.fl)
 
- The Rust toolchain installer
-```yaml
-pkg: rust
-url: https://github.com/rust-lang/rustup
-desc: The Rust toolchain installer
-collection: pkg
-install:
-    - curl https://sh.rustup.rs -sSf | sh -s -- -y
+```
+flasks/ripgrep
+Recursively search directories for a regex pattern.
+url  BurntSushi/ripgrep
 ```
 
-## [tmux.yaml](https://github.com/tmux/tmux)
+## [rustup](https://github.com/crispybaccoon/pkg/tree/mega/flasks/rustup.fl)
 
- tmux is a terminal multiplexer.
-```yaml
-pkg: tmux
-url: https://github.com/tmux/tmux
-desc: tmux is a terminal multiplexer.
-clone: true
-collection: pkg
-install:
-    - sh autogen.sh
-    - ./configure
-    - make
-    - make prefix=$HOME/.hayashi/pack install
-update:
-    - make
-    - make prefix=$HOME/.hayashi/pack install
+```
+flasks/rustup
+The Rust toolchain installer
+url  rust-lang/rustup
 ```
 
-## [vim-plug.yaml](https://github.com/junegunn/vim-plug)
+## [saku](https://github.com/crispybaccoon/pkg/tree/mega/flasks/saku.fl)
 
- A minimalist Vim plugin manager.
-```yaml
-pkg: vim-plug
-url: https://github.com/junegunn/vim-plug
-desc: A minimalist Vim plugin manager.
-clone: true
-collection: pkg
-install:
-    - mkdir -p "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload
-    - cp plug.vim "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/
+```
+flasks/saku
+a tiny distro-independent package manager written in Rust.
+url  crispybaccoon/saku
 ```
 
-## [vtcol.yaml](https://gitlab.com/phgsng/vtcol.git)
+## [starship](https://github.com/crispybaccoon/pkg/tree/mega/flasks/starship.fl)
 
- Change the color scheme of the virtual Linux console.
-```yaml
-pkg: vtcol
-url: https://gitlab.com/phgsng/vtcol.git
-desc: Change the color scheme of the virtual Linux console.
-clone: true
-collection: pkg
-install:
-    - make
-pack:
-    - path: ./target/release/vtcol
-      type: bin
+```
+flasks/starship
+The minimal, blazing-fast, and infinitely customizable prompt for any shell
+url  starship/starship
 ```
 
-## [wezterm.yaml](https://github.com/wez/wezterm)
+## [swww](https://github.com/crispybaccoon/pkg/tree/mega/flasks/swww.fl)
 
-
-```yaml
-pkg: wezterm
-url: https://github.com/wez/wezterm
-clone: true
-collection: pkg
-install:
-    - cargo build -r
-pack:
-    - path: target/release/wezterm target/release/wezterm-gui
-      type: bin
+```
+flasks/swww
+A Solution to your Wayland Wallpaper Woes
+url  LGFae/swww
 ```
 
-## [zk.yaml](https://github.com/mickael-menu/zk)
+## [tealdeer](https://github.com/crispybaccoon/pkg/tree/mega/flasks/tealdeer.fl)
 
+```
+flasks/tealdeer
+A very fast implementation of tldr in Rust.
+url  dbrgn/tealdeer
+```
 
-```yaml
-pkg: zk
-url: https://github.com/mickael-menu/zk
-clone: true
-collection: pkg
-install:
-    - make
-pack:
-    - path: zk
-      type: bin
+## [tmux](https://github.com/crispybaccoon/pkg/tree/mega/flasks/tmux.fl)
+
+```
+flasks/tmux
+tmux is a terminal multiplexer.
+url  tmux/tmux
+```
+
+## [vtcol](https://github.com/crispybaccoon/pkg/tree/mega/flasks/vtcol.fl)
+
+```
+flasks/vtcol
+Change the color scheme of the virtual Linux console.
+url  gitlab.com/phgsng/vtcol
+```
+
+## [wezterm](https://github.com/crispybaccoon/pkg/tree/mega/flasks/wezterm.fl)
+
+```
+flasks/wezterm
+Wez's Terminal Emulator
+url  wez/wezterm
+```
+
+## [xdg-ninja](https://github.com/crispybaccoon/pkg/tree/mega/flasks/xdg-ninja.fl)
+
+```
+flasks/xdg-ninja
+A shell script which checks your *$$HOME* for unwanted files and directories.
+url  b3nj5m1n/xdg-ninja
+```
+
+## [yazi](https://github.com/crispybaccoon/pkg/tree/mega/flasks/yazi.fl)
+
+```
+flasks/yazi
+Blazing fast terminal file manager written in Rust, based on async I/O.
+url  sxyazi/yazi
+```
+
+## [zk](https://github.com/crispybaccoon/pkg/tree/mega/flasks/zk.fl)
+
+```
+flasks/zk
+A plain text note-taking assistant
+url  mickael-menu/zk
 ```
