@@ -1,5 +1,6 @@
 pkgname="wezterm"
 url="wez/wezterm"
+pkgdesc="Wez's Terminal Emulator"
 
 bin=("wezterm" "wezterm-gui")
 template=("cargo")
