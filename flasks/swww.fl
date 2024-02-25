@@ -1,0 +1,7 @@
+pkgname="swww"
+url="LGFae/swww"
+pkgdesc="A Solution to your Wayland Wallpaper Woes"
+
+bin=("swww" "swww-daemon")
+template=("cargo")
+makedepends=("cargo")
