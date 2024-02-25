@@ -1,0 +1,7 @@
+pkgname="rebos"
+url="gitlab.com/Oglo12/rebos"
+pkgdesc="Rebos is a tool that aims at mimicking what NixOS does (reproducibility), for any Linux distribution."
+
+bin=("rebos")
+template=("cargo")
+makedepends=("cargo")
