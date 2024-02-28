@@ -1,5 +1,5 @@
 pkgname="lime"
-url="crispybaccoon/lime"
+url="comfysage/lime"
 pkgdesc="a tiny zsh configuration manager."
 
 build() {

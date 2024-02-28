@@ -1,5 +1,5 @@
 pkgname="gtea"
-url="crispybaccoon/gtea"
+url="comfysage/gtea"
 pkgdesc="a tiny git helper."
 
 bin=("gtea")

@@ -1,5 +1,5 @@
 pkgname="saku"
-url="crispybaccoon/saku"
+url="comfysage/saku"
 pkgdesc="a tiny distro-independent package manager written in Rust."
 
 bin=("sk")

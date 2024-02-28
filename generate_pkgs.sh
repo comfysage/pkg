@@ -14,7 +14,7 @@ page_name="PACKAGES.md"
 echo "-- outfile ($page_name)"
 
 get_url() {
-  echo "https://github.com/crispybaccoon/pkg/tree/mega/$1"
+  echo "https://github.com/comfysage/pkg/tree/mega/$1"
 }
 
 generate_file() {
